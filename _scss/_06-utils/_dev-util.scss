@@ -1,0 +1,95 @@
+$media-query-display: false;
+$devmono: "SF Mono", monospace;
+
+.block--media-queries {
+    z-index: 9999999;
+    transform: skewX(-2deg) translateY(4rem);
+    transition: transform 0.2s $base-animation;
+
+    // @if $media-query-display == true {
+    //   ;
+    // }
+
+    &.show {
+        transition: transform 0.2s $base-animation;
+        transform: skewX(0) translateY(0);
+    }
+
+    border-radius: 3px;
+    font-size: .7rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #231F20;
+    color: #efede7;
+    padding: .4rem .7rem;
+    font-family: $devmono;
+
+    &:after {
+        content: '< 480px';
+        font-weight: 500;
+    }
+
+    @include media($screen-xs) {
+        &:after {
+            content: 'screen-xs 480px';
+            font-weight: 500;
+        }
+    }
+
+
+    @include media($screen-xsm) {
+        &:after {
+            content: 'screen-xsm';
+            font-weight: 100;
+        }
+    }
+
+
+    @include media($screen-sm) {
+        &:after {
+            content: 'screen-sm 640px';
+            font-weight: 500;
+        }
+    }
+
+
+    @include media($screen-smd) {
+        &:after {
+            content: 'screen-smd 834px';
+            font-weight: 100;
+        }
+    }
+
+
+    @include media($screen-md) {
+        &:after {
+            content: 'screen-md 992px';
+            font-weight: 500;
+        }
+    }
+
+
+    @include media($screen-mdl) {
+        &:after {
+            content: 'screen-mdl 1110px';
+            font-weight: 100;
+        }
+    }
+
+
+    @include media($screen-lg) {
+        &:after {
+            content: 'screen-lg 1200px';
+            font-weight: 500;
+        }
+    }
+
+
+    @include media($screen-xl) {
+        &:after {
+            content: 'screen-xl 1640px';
+            font-weight: 100;
+        }
+    }
+}
