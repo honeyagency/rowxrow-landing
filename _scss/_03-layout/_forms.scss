@@ -176,6 +176,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 button, [type="submit"] {
+    appearance: none !important;
     background: $formbuttonbackground;
     color: $formbuttoncolor;
     text-transform: uppercase;
@@ -293,10 +294,21 @@ select:disabled:hover, select[aria-disabled=true] {
 }
 
 input[type="email"] {
-    min-width: 300px;
+    @include media($screen-md) {
+        min-width: 300px;
+    }
+
 
     + input[type="submit"] {
         border-left: 0;
-        margin-left: -4px;
+        margin-left: -5px;
+    }
+
+    @include media($max-smd) {
+        width: 65%;
+
+        + input[type="submit"] {
+            width: 30%;
+        }
     }
 }
