@@ -1,6 +1,6 @@
-$formbordercolor: $base-font-color;
-$formtextcolor: $base-font-color;
-$formplaceholdercolor: $base-font-color;
+$formbordercolor: $maroon;
+$formtextcolor: $maroon;
+$formplaceholdercolor: $maroon;
 
 $forminvalidbackground: red;
 $forminvalidcolor: white;
@@ -8,8 +8,8 @@ $forminvalidcolor: white;
 $formsuccessbackground: $link-color;
 $formsuccesstextcolor: white;
 
-$formbuttonbackground: transparent;
-$formbuttoncolor: $base-font-color;
+$formbuttonbackground: $gray;
+$formbuttoncolor: $maroon;
 
 fieldset {
     background-color: transparent;
@@ -25,27 +25,28 @@ legend {
 
 label {
     display: block;
-    font-weight: 600;
 }
 
 input,
 select,
 textarea,
 #{$all-text-inputs},[type="submit"] {
-    font-size: $base-font-size;
+    font-size: .9rem;
     font-family: $base-sans-font;
     color: $formtextcolor;
     appearance: none;
     border: 1px solid $formbordercolor;
-    border-radius: 2px;
+    border-radius: 0;
     box-shadow: none;
     box-sizing: border-box;
     padding: 0.3125rem 0.625rem;
     transition: color .2s ease-in-out;
     letter-spacing: 1px;
-    min-height: 52px;
+    min-height: 36px;
     line-height: 20px;
     padding: 0 15px;
+    background: $white;
+    text-transform: uppercase;
 
     &:focus {
         transition: color .2s ease-in-out;
@@ -175,10 +176,10 @@ div.wpcf7-mail-sent-ok {
 }
 
 button, [type="submit"] {
-    background-image: linear-gradient(45deg, $link-color, lighten($link-color, 2%));
-    color: white;
-    letter-spacing: 2px;
-    border: 0;
+    background: $formbuttonbackground;
+    color: $formbuttoncolor;
+    text-transform: uppercase;
+    border: 1px solid $formbordercolor;
 }
 
 .gform_ajax_spinner {
@@ -205,7 +206,7 @@ button, [type="submit"] {
 
 /* class applies to select element itself, not a wrapper element */
 select {
-    font-size: $base-font-size;
+    font-size: 1.1rem;
     font-family: $base-sans-font;
     color: $formtextcolor;
     border: 1px solid $formbordercolor;
@@ -237,7 +238,7 @@ select {
         for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
         
     */
-    background-color: $true-white;
+    background-color: $white;
     background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20292.4%20164.4%22%3E%3Cpath%20d%3D%22M287%205.4A17.58%2017.58%200%2000274%200H18.4A17.61%2017.61%200%20005.5%205.4a17.87%2017.87%200%2000-.1%2025.7l128%20127.9a17.87%2017.87%200%200025.6%200L287%2031a17.76%2017.76%200%2000-.1-25.6z%22%20fill%3D%22%232d2d47%22%2F%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
 
@@ -289,4 +290,13 @@ select:disabled, select[aria-disabled=true] {
 
 select:disabled:hover, select[aria-disabled=true] {
     border-color: #aaa;
+}
+
+input[type="email"] {
+    min-width: 300px;
+
+    + input[type="submit"] {
+        border-left: 0;
+        margin-left: -4px;
+    }
 }

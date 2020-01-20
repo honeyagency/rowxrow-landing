@@ -1,0 +1,30 @@
+.section--home {
+    min-height: 100vh;
+
+    @include media($screen-mdl) {
+        min-height: 100vh;
+    }
+
+
+    .block--image {
+        @include media($max-mdl) {
+            height: 300px;
+            overflow: hidden;
+        }
+
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .block--social {
+        a {
+            color: $maroon;
+
+            i {
+                color: $maroon;
+            }
+        }
+    }
+}

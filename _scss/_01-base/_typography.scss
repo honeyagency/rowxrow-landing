@@ -2,9 +2,10 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: $base-sans-font;
     line-height: $base-line-height;
-    font-size: $base-font-size;
-    color: $base-font-color;
-    font-weight: 400;
+    font-size: 1.1rem;
+    color: $maroon;
+    font-weight: 300;
+    letter-spacing: .5px;
 }
 
 %headings {
@@ -17,16 +18,15 @@ h1, h2, h3, h4, h5, h6 {
     @extend %headings;
 
     word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    hyphens: auto;
-    text-transform: uppercase;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
 }
 
 // mobile
-$h1: 2.5 * $base-font-size;
+$h1: 3.1 * $base-font-size;
 $h2: 1.075 * $base-font-size;
 $h3: 0.95 * $base-font-size;
 $h4: 0.9 * $base-font-size;

@@ -7,9 +7,17 @@
         display: flex;
     }
 }
-.flex--column{
+
+.mdl--flex {
+    @include media($screen-mdl) {
+        display: flex;
+    }
+}
+
+.flex--column {
     flex-direction: column;
 }
+
 .flex--wrap {
     flex-wrap: wrap;
 }
@@ -45,9 +53,11 @@
 .align--items-baseline {
     align-items: baseline;
 }
-.flex--column{
+
+.flex--column {
     flex-direction: column;
 }
+
 // 
 // Grid
 //
