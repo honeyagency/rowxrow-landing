@@ -22,8 +22,8 @@ title: Zinfest 2020
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   An iconic weekend in Lodi of world-class wines and the friendly faces behind the craft.
-baseurl: "/rowxrow-landing" # the subpath of your site, e.g. /blog
-url: "https://honeyagency.github.io/rowxrow-landing/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://zinfest.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # baseurl: "" 
 # url: "" 
