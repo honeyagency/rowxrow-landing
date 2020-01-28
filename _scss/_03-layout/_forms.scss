@@ -37,7 +37,7 @@ textarea,
     appearance: none;
     border: 1px solid $formbordercolor;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: none !important;
     box-sizing: border-box;
     padding: 0.3125rem 0.625rem;
     transition: color .2s ease-in-out;
@@ -177,6 +177,7 @@ div.wpcf7-mail-sent-ok {
 
 button, [type="submit"] {
     appearance: none !important;
+    -webkit-appearance: none !important;
     background: $formbuttonbackground;
     color: $formbuttoncolor;
     text-transform: uppercase;
