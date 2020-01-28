@@ -1,7 +1,11 @@
 .section--home {
+    .block--content {
+        max-width: 900px;
+    }
+
     h1 {
         font-size: 4.5rem;
-        line-height: 1.1;
+        line-height: 1;
         width: 100%;
         font-weight: 300;
 
