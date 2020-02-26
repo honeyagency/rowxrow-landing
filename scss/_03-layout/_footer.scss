@@ -1,1 +1,39 @@
-footer{}
+.peice--social {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+    i {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+
+        svg {
+            path {
+                fill: $green-dark;
+            }
+        }
+    }
+
+    @include media($max-lg) {
+        margin-top: 1rem;
+    }
+}
+
+footer {
+    .block--nav {
+        margin-top: 24px;
+    }
+
+    .block--present {
+        > div {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            i {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

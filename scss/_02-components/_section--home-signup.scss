@@ -1,0 +1,87 @@
+.section--home-signup {
+    position: relative;
+
+    .large {
+        position: relative;
+        z-index: 1;
+    }
+
+    .piece--icon {
+        &.first {
+            display: none;
+        }
+
+        width: 120px;
+        position: absolute;
+        z-index: 2;
+
+        &.first {
+            right: 0;
+            top: -60px;
+            display: block;
+        }
+
+        &.second {
+            display: block;
+            left: 0;
+            bottom: -95px;
+        }
+
+        @include media($screen-sm) {
+            width: 160px;
+
+            &.first {
+                right: 0;
+                top: -78px;
+                display: block;
+            }
+
+            &.second {
+                display: block;
+                left: 0;
+                bottom: -125px;
+            }
+        }
+
+
+        @include media($screen-md) {
+            width: 240px;
+
+            &.first {
+                top: -118px;
+            }
+
+            &.second {
+                bottom: -187px;
+            }
+        }
+    }
+
+    form {
+        max-width: 535px;
+        margin: 0 auto;
+        border-bottom: 4px solid $green-dark;
+
+        label {
+            @extend h2;
+
+            color: $green-light;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input[type="email"] {
+            width: calc(100% - 75px);
+            background: transparent;
+            padding: 0.65rem;
+        }
+
+        input[type="submit"] {
+            width: 65px;
+            padding: 0;
+            background-size: 100%;
+            background-position: center center;
+            margin-bottom: -10px;
+        }
+    }
+}

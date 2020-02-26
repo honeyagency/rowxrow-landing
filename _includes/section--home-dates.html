@@ -1,0 +1,13 @@
+<section class="section--home-dates spacing--gutter spacing--vert-3 spacing--dsk-vert-6 bg--white">
+	<div class="flex flex--wrap justify--between align--items-center max-wrap margin--center text--center margin--bot-3 margin--dsk-bot-6">
+		{% for event in page.events %}
+			<div class="grid--one grid--smd-two-fifths">
+				<h2 class="color--green-light text--uppercase letter--">{{event.title}}</h2>
+				<div class="font--one">
+					{{event.content}}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button center inline-block bg--green-dark color--white text--uppercase font--sans font--black margin--bot-3">{{site.tickets.title}}</a>
+</section>

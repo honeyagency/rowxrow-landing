@@ -1,0 +1,107 @@
+.section--home-header {
+    @include media($max-smd) {
+        align-items: flex-start;
+    }
+
+
+    .block--social {
+        margin-right: 1rem;
+    }
+
+    .block--links {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .block--content {
+        max-width: 900px;
+        position: relative;
+
+        .icon-logo {
+            display: none;
+
+            @include media($screen-md) {
+                display: block;
+                width: 100%;
+                max-width: 435px;
+                top: 50%;
+                position: relative;
+                transform: translateY(-50%);
+            }
+
+
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .icon-logo-footer {
+            display: none;
+
+            @include media($max-md) {
+                max-width: 90%;
+                width: 550px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        @include media($max-md) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        line-height: 1;
+        width: 100%;
+        font-weight: 300;
+
+        .h3 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 1.2px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @include media($screen-mdl) {
+        min-height: 100vh;
+    }
+
+
+    .block--image {
+        @include media($max-mdl) {
+            height: 100vw;
+            overflow: hidden;
+        }
+
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .block--social {
+        a {
+            color: $maroon;
+
+            i {
+                color: $maroon;
+            }
+        }
+    }
+
+    .bul {
+        padding: 0 0.5rem;
+        vertical-align: text-bottom;
+    }
+
+    .mc-field-group {
+        label {
+            margin-bottom: .5rem;
+        }
+    }
+}

@@ -1,3 +1,29 @@
-<footer>
-	
+<footer class="bg--white flex flex--wrap justify--between align--items-stretch toanimate">
+	<section class="block--content grid--one grid--md-two-thirds grid--lg-three-fourths spacing--gutter flex flex--wrap justify--around align--items-start spacing--top-3 spacing--dsk-top-4 spacing--bot-2">
+		
+		<div class="block--logo grid--one grid--sm-half grid--md-two-fifths">
+			<i class="icon-logo-footer" data-grunticon-embed></i>
+		</div>
+		<div class="block--nav grid--one grid--sm-half grid--smd-third grid--md-third flex flex--wrap justify--between align--items-center margin--bot-1">
+			<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button small inline-block bg--green-dark color--white text--uppercase font--sans font--black">{{site.tickets.title}}</a>
+			<div>
+				{% for link in site.social %}
+					<a href="{{link.url}}" target="_blank" class="peice--social" title="Follow us on {{link.title}}"><i class="icon-social--{{link.title}}" data-grunticon-embed></i></a>
+				{% endfor %}
+			</div>
+		</div>
+		
+		<div class="block--copyright grid--one grid--sm-half grid--md-two-fifths font--tiny text--uppercase letter--2 nop color--green-light">
+			&copy; 2020 Lodi Winegrape Commission 
+		</div>
+		<div class="space grid--one grid--sm-half grid--smd-third grid--md-third">
+			
+		</div>
+	</section>
+	<aside class="block--present bg--gray grid--one grid--md-third grid--lg-fourth text--center spacing--vert-3 spacing--dsk-vert-0">
+		<div class="color--green-light font--tiny text--uppercase letter--1">
+			{{site.footer.present.title}}
+			<a href="{{site.footer.present.link.url}}" target="{{site.footer.present.link.target}}" title="{{site.footer.present.link.title}}" class="color--pink text--uppercase margin--top-1 font--bold letter--1"><i class="icon-lodi-logo" data-grunticon-embed></i></a>
+		</div>
+	</aside>
 </footer>

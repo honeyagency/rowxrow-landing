@@ -1,0 +1,17 @@
+<section class="section--home-header flex flex--wrap justify--around align--items-stretch bg--white">
+	<div class="block--image grid--one grid--mdl-two-fifths grid--lg-half nog bg--black" style="background-image: url('app/img/bg.jpg');">
+	</div>
+	<div class="block--content grid--one grid--mdl-three-fifths grid--lg-half nog spacing--dsk-horiz-6 spacing--gutter-med">
+		<div class="block--links flex flex--wrap justify--end align--items-center">
+			<div class="block--social">
+				{% for link in site.social %}
+					<a href="{{link.url}}" target="_blank" class="peice--social" title="Follow us on {{link.title}}"><i class="icon-social--{{link.title}}" data-grunticon-embed></i></a>
+				{% endfor %}
+			</div>
+			<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button small inline-block bg--green-dark color--white text--uppercase font--sans font--black">{{site.tickets.title}}</a>
+			
+		</div>
+		<i class="icon-logo" data-grunticon-embed></i>
+		<i class="icon-logo-footer" data-grunticon-embed></i>
+	</div>
+</section>

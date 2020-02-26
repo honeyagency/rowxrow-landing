@@ -9,6 +9,7 @@
 @import "_01-base/reset";
 @import "_01-base/typography";
 @import "_01-base/base";
+@import "_01-base/fonts";
 
 @import "_03-layout/navigation";
 @import "_03-layout/header";
@@ -29,5 +30,9 @@
 @import "_02-components/margin";
 @import "_02-components/spacing";
 @import "_02-components/section--home";
+@import "_02-components/section--home-header";
+@import "_02-components/section--home-intro";
+@import "_02-components/section--home-dates";
+@import "_02-components/section--home-signup";
 
 @import "_04-pages/home";

@@ -1,19 +1,19 @@
-$link-color: #4aa4ff;
+$link-color: $green-fade;
 
-$default-font: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
+$default-font: "Work Sans", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
 
 $base-serif-font: $default-font;
 $base-sans-font: $default-font;
-$heading-font-family: $default-font;
+$heading-font-family: "Codec", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
 
-$heading-font-weight: 200;
+$heading-font-weight: 900;
 
 $true-white: white;
-$max-wrap: 840px;
+$max-wrap: 935px;
 
 $base-animation: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
-$base-font-color: #231f20;
+$base-font-color: $green-dark;
 $base-font-size: 1.2rem;
 $base-padding: 1rem;
 $base-line-height: 1.6;
