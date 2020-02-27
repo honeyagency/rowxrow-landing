@@ -1,9 +1,10 @@
-<section class="section--home-intro spacing--gutter bg--true-white spacing--vert-3 spacing--dsk-vert-6 text--center">
+<section class="section--home-intro spacing--gutter bg--true-white spacing--section text--center">
 	<div class="max-wrap margin--center">
-		<h1 class="color--green-dark margin--bot-0">{{page.intro.title}}</h1>
-		<h2 class="color--green-light letter--1 text--uppercase margin--top-0">{{page.intro.subtitle}}</h2>
-		<div class="block--content grid--one grid--smd-three-fifths margin--center font--medium">
+		<h1 class="color--green-dark mar--no animateonce slideupfade">{{page.intro.title}}</h1>
+		<h2 class="color--green-light letter--1 text--uppercase margin--top-0 animateonce slideupfade">{{page.intro.subtitle}}</h2>
+		<p class="block--content grid--one grid--xsm-three-fifths margin--center font--medium animateonce slideupfade margin--bot-2">
 			{{page.intro.content}}
-		</div>
+		</p>
+		<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button center inline-block bg--green-dark color--white text--uppercase font--sans font--black animateonce slideupfade min--smd-hide">{{site.tickets.title}}</a>
 	</div>
 </section>

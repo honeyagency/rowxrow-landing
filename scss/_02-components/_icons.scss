@@ -17,3 +17,18 @@
 
     margin: 0 auto;
 }
+
+a {
+    i {
+        transition: fill 0.2s $base-animation;
+    }
+
+    &:hover, &:focus {
+        i {
+            path {
+                transition: fill 0.2s $base-animation;
+                fill: $green-fade;
+            }
+        }
+    }
+}

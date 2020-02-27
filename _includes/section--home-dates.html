@@ -1,13 +1,13 @@
-<section class="section--home-dates spacing--gutter spacing--vert-3 spacing--dsk-vert-6 bg--white">
+<section class="section--home-dates spacing--gutter spacing--section bg--white">
 	<div class="flex flex--wrap justify--between align--items-center max-wrap margin--center text--center margin--bot-3 margin--dsk-bot-6">
 		{% for event in page.events %}
-			<div class="grid--one grid--smd-two-fifths">
-				<h2 class="color--green-light text--uppercase letter--">{{event.title}}</h2>
-				<div class="font--one">
+			<div class="grid--one grid--xsm-three-fifths margin--center grid--smd-two-fifths  {% if loop.last %}{% else %}margin--bot-2{% endif %}">
+				<h3 class="h2 color--green-light text--uppercase letter-- margin--top-0 animateonce slideupfade">{{event.title}}</h3>
+				<p class="font--one animateonce slideupfade margin--bot-0">
 					{{event.content}}
-				</div>
+				</p>
 			</div>
 		{% endfor %}
 	</div>
-	<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button center inline-block bg--green-dark color--white text--uppercase font--sans font--black margin--bot-3">{{site.tickets.title}}</a>
+	<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button center inline-block bg--green-dark color--white text--uppercase font--sans font--black animateonce slideupfade delay">{{site.tickets.title}}</a>
 </section>

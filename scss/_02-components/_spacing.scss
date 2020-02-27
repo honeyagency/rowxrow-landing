@@ -330,7 +330,7 @@
     }
 }
 
-$spacing-gutter: 0.75rem;
+$spacing-gutter: 1.7rem;
 $spacing-gutter-xs: 1.7rem;
 $spacing-gutter-mdl: 4.5rem;
 
@@ -435,5 +435,19 @@ $spacing-gutter-mdl: 4.5rem;
     @include media($max-xs) {
         padding-right: $spacing-gutter * $grid;
         padding-left: $spacing-gutter * $grid;
+    }
+}
+
+.spacing--mobile-vert {
+    @include media($max-smd) {}
+}
+
+.spacing--section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    @include media($screen-md) {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
     }
 }
