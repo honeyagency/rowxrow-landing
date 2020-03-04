@@ -1,0 +1,13 @@
+.section--home-intro {
+    @include media($max-smd) {
+        .button {
+            // width: 100%;
+            // padding-top: 1.5rem;
+            // padding-bottom: 1.5rem;
+            // font-size: 1.2rem;
+            // margin-top: -1px;
+            // text-align: center;
+       
+        }
+    }
+}

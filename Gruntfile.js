@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
          conf: {
             js: 'static/**/*.js',
-            sass: '_scss/**/*.scss',
+            sass: 'scss/**/*.scss',
             app: 'app',
             icons: 'static/icons',
             appIcons: 'app/icons/',
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           uglify: {
             dist: {
                 files: {
-                    "app/app.min.js": ['_static/**/*.js', '!_static/icons/**'],
+                    "app/app.min.js": ['static/**/*.js', '!static/icons/**'],
                 }
             },
         },
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                     sourceMap: false
                 },
                 files: {
-                    '<%= conf.app %>/main.min.css': '_scss/main.scss',
+                    '<%= conf.app %>/main.min.css': 'scss/main.scss',
                 }
             }
         },
@@ -65,22 +65,14 @@ module.exports = function(grunt) {
         //     }
         // },
         watch: {
-            twig: {
-                files: '**/*.twig',
-                options: {
-                    livereload: true,
-                },
-            },
+    
             scripts: {
                 files: ["<%= conf.js %>"],
                 tasks: ["uglify"]
             },
             sass: {
                 files: ["<%= conf.sass %>"],
-                tasks: ["sass"],
-                options: {
-                    livereload: true,
-                },
+                tasks: ["sass"]
             }
         },
         svgmin: {

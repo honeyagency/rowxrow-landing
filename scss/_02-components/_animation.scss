@@ -1,0 +1,271 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpMoreFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(1.6rem) skewY(-1deg);
+    }
+
+    75% {
+        transform: translateY(0rem) skewY(0deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpMoreFilterIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0.5);
+        transform: translateY(1.6rem) skewY(-1deg);
+    }
+
+    75% {
+        transform: translateY(0rem) skewY(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+.slideupfade {
+    &.animateonce {
+        animation-name: slideUpMoreFadeIn;
+        animation-duration: 1s;
+        animation-timing-function: $base-animation;
+        animation-delay: 0;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-direction: normal;
+        animation-play-state: paused;
+
+        &.show {
+            animation-play-state: running;
+        }
+    }
+
+    + .slideupfade {
+        animation-delay: 0.05s * 1;
+
+        + .slideupfade {
+            animation-delay: 0.05s * 2;
+
+            + .slideupfade {
+                animation-delay: 0.05s * 3;
+
+                + .slideupfade {
+                    animation-delay: 0.05s * 4;
+
+                    + .slideupfade {
+                        animation-delay: 0.05s * 5;
+
+                        + .slideupfade {
+                            animation-delay: 0.05s * 6;
+
+                            + .slideupfade {
+                                animation-delay: 0.05s * 7;
+
+                                + .slideupfade {
+                                    animation-delay: 0.05s * 8;
+
+                                    + .slideupfade {
+                                        animation-delay: 0.05s * 9;
+
+                                        + .slideupfade {
+                                            animation-delay: 0.05s * 10;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slideupfilter {
+    &.animateonce {
+        animation-name: slideUpMoreFilterIn;
+        animation-duration: 1s;
+        animation-timing-function: $base-animation;
+        animation-delay: 0;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+
+        &.show {
+            animation-play-state: running;
+        }
+    }
+}
+
+i.icon-logo {
+    &.animateonce {
+        svg {
+            overflow: visible;
+
+            #lodi {
+                animation-name: lodi;
+                animation-duration: .45s;
+                animation-timing-function: $base-animation;
+                animation-delay: 0;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: paused;
+                transform: translateY(-2rem);
+            }
+
+            #row-01 {
+                animation-name: row-01;
+                animation-duration: .45s;
+                animation-timing-function: $base-animation;
+                animation-delay: .2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: paused;
+                transform: translateX(-2rem);
+            }
+
+            #by {
+                transform-origin: center;
+                animation-name: by;
+                animation-duration: .3s;
+                animation-timing-function: $base-animation;
+                animation-delay: .3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: paused;
+                transform: scale(0.8) translateY(-1.5rem) translateX(3.5rem);
+            }
+
+            #row-02 {
+                animation-name: row-02;
+                animation-duration: .6s;
+                animation-timing-function: $base-animation;
+                animation-delay: .3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: paused;
+                transform: translateY(1rem);
+            }
+
+            #festival {
+                animation-name: festival;
+                animation-duration: .65s;
+                animation-timing-function: $base-animation;
+                animation-delay: .3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: paused;
+                transform: rotate(-4deg) skewY(3deg);
+            }
+        }
+    }
+
+    &.show {
+        svg {
+            path, g {
+                animation-play-state: running !important;
+            }
+        }
+    }
+}
+
+@keyframes lodi {
+    0% {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        @include accelerate;
+
+        opacity: 1;
+    }
+}
+
+@keyframes by {
+    0% {
+        transform: scale(0.8) translateY(-1.5rem) translateX(3.5rem);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        @include accelerate;
+
+        opacity: 1;
+    }
+}
+
+@keyframes row-02 {
+    0% {
+        transform: skewY(-1.5deg) translateY(1rem);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        @include accelerate;
+
+        opacity: 1;
+    }
+}
+
+@keyframes row-01 {
+    0% {
+        transform: skewY(-2deg) translateX(-2rem);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        @include accelerate;
+
+        opacity: 1;
+    }
+}
+
+@keyframes festival {
+    0% {
+        transform: rotate(-4deg) skewY(3deg);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        @include accelerate;
+
+        opacity: 1;
+    }
+}

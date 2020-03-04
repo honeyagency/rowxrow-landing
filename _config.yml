@@ -1,5 +1,5 @@
 # Welcome to Jekyll!
-#
+# #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
@@ -18,12 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Zinfest 2020
+title: Lodi Row x Row Festival | May 15 & 16, 2020 at Lodi Lake
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  An iconic weekend in Lodi of world-class wines and the friendly faces behind the craft.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zinfest.com" # the base hostname & protocol for your site, e.g. http://example.com
+  Formally known as ZinFest, the Lodi Row x Row Festival returns to Lodi Lake for an iconic weekend of world-class wines and the friendly faces behind the craft.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://zinfest.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+baseurl: "https://workbyhoney.com/wp-content/uploads/rowxrow" 
+url: "https://workbyhoney.com/wp-content/uploads/rowxrow" 
 
 # baseurl: "" 
 # url: "" 
@@ -54,3 +57,24 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+tickets:
+  url: https://www.eventbrite.com/
+  title: Buy Tickets
+footer:
+  present:
+    title: "Event Presented By:"
+    link:
+      title: Visit Lodi Wine California's Website
+      url: https://www.lodiwine.com/
+      target: "_blank"
+social:
+  -
+    title: facebook 
+    url: https://www.facebook.com/LodiWine/
+  -
+    title: twitter 
+    url: https://twitter.com/lodi_wine
+  -
+    title: instagram 
+    url: https://www.instagram.com/lodi_wine/

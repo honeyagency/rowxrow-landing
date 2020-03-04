@@ -1,3 +1,36 @@
-<footer>
+<footer class="bg--white flex flex--wrap justify--between align--items-stretch toanimate">
+	<section class="block--content grid--one grid--md-two-thirds grid--lg-three-fourths spacing--gutter flex flex--wrap justify--around align--items-start spacing--top-3 spacing--dsk-top-4 spacing--bot-2">
+		
+		<div class="block--logo grid--one grid--sm-half grid--md-two-fifths">
+			<i class="icon-logo-footer margin--center" data-grunticon-embed></i>
+
+		</div>
+		
+		</div>
+		<div class="block--nav grid--one grid--sm-half grid--smd-third grid--md-third nog flex flex--wrap justify--between align--items-center margin--bot-1">
+			<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button small inline-block bg--green-dark color--white text--uppercase font--sans font--black">{{site.tickets.title}}</a>
+			<div class="large--hide grid--one margin--bot-2">
+				
+			</div>
+			<div>
+				{% for link in site.social %}
+					<a href="{{link.url}}" target="_blank" class="peice--social" title="Follow us on {{link.title}}"><i class="icon-social--{{link.title}}" data-grunticon-embed></i></a>
+				{% endfor %}
+			</div>
+		</div>
+		
+		<div class="block--copyright margin--top-2 font--tiny text--uppercase letter--2 nop color--green-light medium--hide">
+			&copy; 2020 Lodi Winegrape Commission | <a class="color--green-dark" href="{{site.baseurl}}/accessibility.html">Accessibility</a> | <a class="color--green-dark" href="{{site.baseurl}}/privacy-policy.html">Privacy Policy</a>
+		</div>
 	
+	</section>
+	<aside class="block--present bg--gray grid--one grid--md-third grid--lg-fourth text--center spacing--vert-3">
+		<div class="color--green-light font--tiny text--uppercase letter--1">
+			<span class="medium--hide">{{site.footer.present.title}}</span>
+			<a href="{{site.footer.present.link.url}}" target="{{site.footer.present.link.target}}" title="{{site.footer.present.link.title}}" class="color--pink text--uppercase margin--dsk-top-1 font--bold letter--1"><i class="icon-lodi-logo" data-grunticon-embed></i></a>
+		</div>
+	</aside>
+		<div class="grid--one block--copyright spacing--vert-2 font--tiny text--uppercase letter--2 nop color--green-dark spacing--gutter text--center large--hide">
+			&copy; 2020 Lodi Winegrape Commission<br><a class="color--green-dark" href="{{site.baseurl}}/accessibility.html">Accessibility</a> | <a class="color--green-dark" href="{{site.baseurl}}/privacy-policy.html">Privacy Policy</a>
+		</div>
 </footer>

@@ -1,3 +1,11 @@
+.icon-arrow-right { background-image: url('app/icons/arrow-right.png'); background-repeat: no-repeat; }
+
+.icon-lodi-logo { background-image: url('app/icons/lodi-logo.png'); background-repeat: no-repeat; }
+
+.icon-logo-footer { background-image: url('app/icons/logo-footer.png'); background-repeat: no-repeat; }
+
+.icon-logo { background-image: url('app/icons/logo.png'); background-repeat: no-repeat; }
+
 .icon-social--facebook { background-image: url('app/icons/social--facebook.png'); background-repeat: no-repeat; }
 
 .icon-social--instagram { background-image: url('app/icons/social--instagram.png'); background-repeat: no-repeat; }

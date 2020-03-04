@@ -1,0 +1,8 @@
+<div class="block--links flex flex--wrap justify--end align--items-center max--smd-hide">
+	<div class="block--social">
+		{% for link in site.social %}
+			<a href="{{link.url}}" target="_blank" class="peice--social" title="Follow us on {{link.title}}"><i class="icon-social--{{link.title}}" data-grunticon-embed></i></a>
+		{% endfor %}
+	</div>
+	<a href="{{site.tickets.url}}" title="{{site.tickets.title}}" target="_blank" class="button small-mob inline-block bg--green-dark color--white text--uppercase font--sans font--black">{{site.tickets.title}}</a>
+</div>

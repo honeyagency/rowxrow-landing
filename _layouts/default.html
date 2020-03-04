@@ -11,6 +11,8 @@ layout: compress
 {% include footer.html %}
 </body>
 <link rel="stylesheet" href="{{ "/app/main.min.css" | prepend: site.baseurl }}">
-<!-- <script src="{{ "/app/app.min.js" | prepend: site.baseurl }} type="text/javascript" charset="utf-8" async defer></script> -->
+<script src="{{ "/app/app.min.js" | prepend: site.baseurl }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ "/app/vendors/lazyload.min.js" | prepend: site.baseurl }}" type="text/javascript" charset="utf-8" ></script>
+
 {% include analytics.html %}
 </html>

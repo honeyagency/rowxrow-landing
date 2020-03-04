@@ -1,0 +1,9 @@
+.section--home-dates {
+    .justify--between {
+        @include media($max-md) {
+            @include media($screen-smd) {
+                justify-content: space-around;
+            }
+        }
+    }
+}

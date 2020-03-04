@@ -2,14 +2,26 @@
     background-color: $base-font-color;
 }
 
-.bg--maroon {
-    background-color: $maroon;
+.bg--gray {
+    background-color: $gray;
 }
 
 .bg--white {
     background-color: $white;
 }
 
-.bg--gray {
-    background-color: $gray;
+.bg--true-white {
+    background-color: white;
+}
+
+.bg--green-dark {
+    background-color: $green-dark;
+}
+
+.bg--green-light {
+    background-color: $green-light;
+}
+
+.bg--green-fade {
+    background-color: $green-fade;
 }

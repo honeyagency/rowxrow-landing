@@ -1,6 +1,6 @@
-$formbordercolor: $maroon;
-$formtextcolor: $maroon;
-$formplaceholdercolor: $maroon;
+$formbordercolor: transparent;
+$formtextcolor: $green-dark;
+$formplaceholdercolor: $green-dark;
 
 $forminvalidbackground: red;
 $forminvalidcolor: white;
@@ -8,8 +8,8 @@ $forminvalidcolor: white;
 $formsuccessbackground: $link-color;
 $formsuccesstextcolor: white;
 
-$formbuttonbackground: $gray;
-$formbuttoncolor: $maroon;
+$formbuttonbackground: transparent;
+$formbuttoncolor: $green-dark;
 
 fieldset {
     background-color: transparent;
@@ -31,10 +31,11 @@ input,
 select,
 textarea,
 #{$all-text-inputs},[type="submit"] {
-    font-size: .9rem;
+    font-size: 1.3rem;
     font-family: $base-sans-font;
     color: $formtextcolor;
     appearance: none;
+    font-weight: 500;
     border: 1px solid $formbordercolor;
     border-radius: 0;
     box-shadow: none !important;
@@ -45,8 +46,7 @@ textarea,
     min-height: 36px;
     line-height: 20px;
     padding: 0 15px;
-    background: $white;
-    text-transform: uppercase;
+    background-color: $white;
 
     &:focus {
         transition: color .2s ease-in-out;
@@ -178,7 +178,7 @@ div.wpcf7-mail-sent-ok {
 button, [type="submit"] {
     appearance: none !important;
     -webkit-appearance: none !important;
-    background: $formbuttonbackground;
+    background-color: $formbuttonbackground;
     color: $formbuttoncolor;
     text-transform: uppercase;
     border: 1px solid $formbordercolor;
