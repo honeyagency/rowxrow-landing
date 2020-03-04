@@ -25,8 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://zinfest.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-baseurl: "https://workbyhoney.com/wp-content/uploads/rowxrow" 
-url: "https://workbyhoney.com/wp-content/uploads/rowxrow" 
+baseurl: "https://lodirowxrow.com" 
+url: "https://lodirowxrow.com" 
 
 # baseurl: "" 
 # url: "" 
@@ -59,7 +59,7 @@ plugins:
 #   - vendor/ruby/
 
 tickets:
-  url: https://www.eventbrite.com/
+  url: https://www.eventbrite.com/e/lodi-row-x-row-festival-2020-tickets-97829822633
   title: Buy Tickets
 footer:
   present:
