@@ -1,9 +1,7 @@
 ---
 layout: home
 intro:
-    title: May 15 & 16, 2020
-    subtitle: At Lodi Lake
-    content: Formally known as ZinFest, the Lodi Row x Row Festival returns to Lodi Lake for an iconic weekend of world-class wines and the friendly faces behind the&nbsp;craft.
+    title: See You Next Year
 events:
     -
         title: Friday

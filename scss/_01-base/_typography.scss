@@ -172,7 +172,13 @@ ol {
 
 a {
     text-decoration: none;
-    color: $link-color;
+    color: $green-dark;
+}
+
+p {
+    a {
+        border-bottom: 1px solid;
+    }
 }
 
 code, pre {
