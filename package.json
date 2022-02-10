@@ -33,7 +33,7 @@
     "grunt-postcss": "*",
     "grunt-sass": "^3.1.0",
     "grunt-svgmin": "*",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "postcss-convert-values": "*",
     "postcss-font-magician": "*"
   }
